@@ -2,8 +2,7 @@ package wasmcloud:postgresql;
 
 interface types {
     record row {
-        field-name: string,
-        value: data-type,
+        entries: list<tuple<string, data-type>>,
     }
     
     variant data-type {
